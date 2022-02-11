@@ -1,0 +1,474 @@
+/* CSS RESET */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:10%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.589);
+}
+
+#logo img{
+    margin: 1px 5px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+/* Navigation bar:List styling */
+
+#navbar ul{
+    margin: 10px 250px;
+}
+
+#navbar ul li{
+    text-decoration: none;
+    align-items: center;
+    margin: 10px 10px;
+    list-style:none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    color: rgb(41, 46, 124);
+    background-color: rgb(210, 225, 226);
+    border: 2px solid rgb(41, 46, 124);
+    border-radius: 10px;
+    padding:0px 10px;
+    text-decoration: none;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+#navbar ul li a:hover{
+    display: block;
+    color: black;
+    background-color: rgb(205, 232, 243);
+}
+
+#navbar .search img{
+    display: block;
+    width: 0px;
+    border-radius: 10px;
+    height: 0px;
+}
+
+#navbar input{
+    display: block;
+    margin: 0px 10px;
+    padding: 2px 2px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.411);
+    text-align: center;
+    color: rgba(80, 78, 78, 0.521);
+}
+
+#navbar input:hover{
+    display: block;
+    text-decoration: underline;
+    color: black;
+    background-color: rgb(240, 236, 236);
+    cursor: pointer;
+    
+}
+
+#navbar #search img{
+    border-radius: 20px;;
+}
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 10px;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    font-family: 'Bree Serif', serif;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('coverpage/background1.jpg') no-repeat center center/cover;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#home h1{
+    font-size: 45px;
+    background-color: rgba(252, 252, 252, 0.555);
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+/*Cars photos*/
+
+#collection{
+    width: 90%;
+    height: 100%;
+    margin-top: 130px;
+}
+
+#collection h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Rampart One', cursive;
+}
+
+#collection #para{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+
+#items{
+    display: flex;
+}
+
+#items img{
+    width: 100%;
+    height: 100%;
+    margin: 20px 40px;
+    border-radius: 500px;
+}
+
+#collection #item-1,#item-2,#item-3{
+    transition-duration: 2s;
+}
+#collection #item-1:hover,#item-2:hover,#item-3:hover{
+    transform:scale(1.3);
+}
+
+#items1{
+    display: flex;
+}
+
+#items1 img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 20px 38px;
+    border-radius: 500px;
+}
+#collection #item-4,#item-5,#item-6{
+    transition-duration: 2s;
+}
+#collection #item-4:hover,#item-5:hover,#item-6:hover{
+    transform:scale(1.3);
+}
+
+/*Electronic vehicle page*/
+#evpage{
+    width: 100%;
+    height: 100%;
+    margin-top: 130px;
+    margin-bottom: 10px;
+}
+
+#evpage h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Rampart One', cursive;
+}
+
+#evpage #para{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 5px;
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+
+#evpage #itemsev{
+    display: flex;
+    margin:5px 10px 2px 2px;
+    width: 100%;
+}
+#evpage #itemsev #item-01,#item-03{
+    margin:10px 10px ;
+    width: 22%;
+    margin-bottom: 50px;
+}
+
+#evpage #itemsev #item-02,#item-04{
+    margin:10px 10px ;
+    width: 22%;
+    margin-top: 50px;
+}
+
+
+/*About us */
+
+#aboutus{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+#aboutus h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+    font-family: 'Rampart One', cursive;
+}
+
+#aboutus #pic{
+    display: flex;
+}
+
+#aboutus #pic img{
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 10px;
+    width: 500px;
+}
+
+#aboutus #pic p{
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 100%;
+    width: 40%;
+    margin: 55px 20px 10px 50px;
+    padding: 20px 20px 20px 20px;
+}
+
+
+/*CLIENTS SECTION*/
+
+#clients{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#clients h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: 'Rampart One', cursive;
+}
+
+#clients #logo::before{
+    content: "";
+    position: absolute;
+    background:url('clients/clients.jpg') no-repeat center center/cover;
+    height: 30%;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+
+}
+
+#clients #logo{
+    display: flex;
+    /* margin-left: 100px; */
+}
+
+#clients #logo img{
+    margin: 10px 10px 10px 100px;
+    width: 15%;
+    height: 150px;
+}
+
+/*DEALERS*/
+
+#dealers{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+#dealers h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+    font-family: 'Rampart One', cursive;
+    margin-bottom: 50px;
+}
+
+#dealers #locate::before{
+    content: "";
+    position: absolute;
+    background:url('coverpage/dealers-back.jpg') no-repeat center center/cover;
+    width: 50%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.5;
+} 
+
+#dealers #locator{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dealers #dealer{
+    display: flex;
+}
+
+#dealers #dealer #head{
+    display: flex;
+    text-align: center;
+    justify-content: center ;
+    font-size: 2rem;
+    margin-left: 200px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+
+#locator input,#locator textarea{
+    width: 100%;
+    padding: 0.4rem;
+    border:2px solid black;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin-left: 100px;
+}
+
+#locator input{
+    text-align: center;
+}
+
+#locator label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    margin-left: 100px;
+}
+
+#locate .btn button{
+    display: inline-flex;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+    margin-top: 30px;
+    margin-left: 430px;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 5px;
+}
+#locate .btn button:hover{
+    background-color: white;
+    border:2px solid black;
+}
+/*CONTACT US*/
+
+#contact{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    color: white;
+}
+
+#contact h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    width: 100%;
+    font-family: 'Rampart One', cursive;
+}
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.74);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* opacity: 0.5; */
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border:2px solid black;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box input{
+    text-align: center;
+}
+
+
+#contact-box form{
+    width: 40%;
+
+}
+
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .btn button{
+    margin:10px 10px;
+    padding: 8px 10px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    width: 5%;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact .btn button:hover{
+    background-color: white;
+    border:2px solid black;
+    background-color: rgb(206, 205, 205);
+}
+
+/*footer*/
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
