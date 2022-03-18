@@ -1,53 +1,124 @@
 /* Navigation section */
-#navbar{
+.navbar{
     flex-direction: column;
     width: 100%;
+    opacity: 1;
+    /* height: 340px; */
 }
-#navbar ul li a{
-    font-size: 1rem;
-    padding: 0px 7px;
-    flex-wrap:wrap;
+
+.navbar ul{
+    /* opacity: 1; */
+    /* display: block; */
+    display: flex;
+    width: 40%;
+    justify-content: center;
+
+}
+.navbar #search img{
+    display: flex;
+    justify-content: center;
+}
+.navbar #input1 img{
+    display: flex;
+    justify-content: center;
 }
 
 /* home section*/
 #home{
-    height: 500px;
+    height: 100%;
     flex-direction: column;
-    /* padding: 3px 28px;
-    padding-bottom: 8px; */
+    /* margin-top: 40%; */
+    width:100%;
 }
 #home::before{
     height: 100%;
     width: 100%;
 }
-#home p{
-    font-size: 13px;
+
+
+#home h1{
+    width: 85%;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    margin-top:50vh;
+}
+/*collection*/
+
+#collection{
+    margin-top: 40vh;
+    width: 90%;
+    flex-direction: column;
+}
+#collection #items ,#items1{
+    flex-wrap: wrap;
+    /* flex-direction: column;*/
+    display: flex;
+    justify-content: center;
+    width: 90%;
+} 
+
+/*ev page*/
+#evpage #itemsev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#evpage #itemsev img{
+    width:90%;
+    display: flex;
+    justify-content: center;
+
 }
 /*about us*/
-
-#aboutus{
-    width: 50%;
-}
-
-#aboutus #pic{
+#aboutus h1{
     flex-wrap: wrap;
 }
-#aboutus {
+#aboutus #pic img{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#aboutus #pic p{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: fit-content;
+    flex-wrap: wrap;
 }
 
 /* clients section */
-#clients-section{
-    flex-wrap: wrap;
-}
 #clients{
+    flex-direction: row-reverse;
+}
+
+#clients #logo {
+    width: 100%;
+    height: 50%;
     flex-wrap: wrap;
 }
-#clients-img{
+
+/*dealers*/
+
+#dealers #dealer #image{
+    width:100%;
+    height: fit-content;
+}
+
+#dealers #dealer #locate::before{
     width: 100%;
-    /* padding:2px 6px; */
-    height: 50%;
+}
+
+#dealers #dealer #locate{
+    width: 80%;
+}
+
+#dealers #dealer .btn{
+    justify-content: center;
 }
 /* contact us section */
 #contact{
@@ -61,18 +132,34 @@
 }
 
 #contact p{
-    width: 1000px;
+    width: 100%;
+}
+/*burger*/
+.navbar{
+    flex-direction: column;
+    /* transition: all 0.6s ease-out; */
+}
+.nav-list{
+    flex-direction: column; 
+}
+.burger{
+    display: block;
+}
+#search{
+    width: 100%;
+}
+#input1{
+    width: 100%;
+}
+.h-nav-resp{
+    height: 130px;
 }
 
-
-/*dealers*/
-
-#dealers{
-    width: 100%;
-    flex-wrap: wrap;
+.v-class-resp{
+    /* visibility: hidden; */
+    opacity: 0;
 }
 
-#locator{
-    width: 100%;
-    flex-wrap: wrap;
+.rightnav{
+    justify-content: center;
 }
